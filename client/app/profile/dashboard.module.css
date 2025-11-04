@@ -1,0 +1,144 @@
+.dashboardWrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 10px;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 0 #ececec;
+  padding: 22px 30px;
+  margin-bottom: 36px;
+}
+.cardTitle {
+  font-size: 1.13rem;
+  color: #20242d;
+  font-weight: 500;
+}
+.profileInfo {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  gap: 15px;
+}
+.avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 5px;
+  border: 2px solid #eaeaea;
+}
+.profileName {
+  font-size: 1.13rem;
+  font-weight: 500;
+}
+.profileEmail {
+  font-size: 0.95rem;
+  color: #7c8ca0;
+  margin-bottom: 2px;
+}
+.manageLink {
+  color: #3183ef;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+.section h3 {
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+.bookingGrid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 720px) {
+  .bookingGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.bookingCard {
+  background: #fff;
+  border-radius: 11px;
+  box-shadow: 0 0 7px 0 #eeeef6;
+  padding: 24px 18px 12px 18px;
+  min-width: 210px;
+  border: 1px solid #f4f8fe;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cardRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bookingId {
+  color: #8d96ad;
+  font-size: 0.97rem;
+}
+.statusUpcoming {
+  background: #e8edfa;
+  color: #3183ef;
+  font-size: 0.85rem;
+  padding: 2px 10px;
+  border-radius: 9px;
+  font-weight: 500;
+}
+.statusCompleted {
+  background: #dbf7e8;
+  color: #23be76;
+  font-size: 0.85rem;
+  padding: 2px 10px;
+  border-radius: 9px;
+  font-weight: 500;
+}
+.infoRow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 13px 0 2px 0;
+  font-size: 1.04rem;
+  font-weight: 400;
+  color: #222b3a;
+}
+.infoIcon svg {
+  display: block;
+}
+.route {
+  font-weight: 500;
+}
+.datesRow {
+  color: #4c5063;
+  font-size: 0.96rem;
+  display: flex;
+  gap: 18px;
+  margin: 3px 0;
+}
+.travelIconFlight {
+  background: #e8edfa;
+  border-radius: 7px;
+  padding: 13px 0;
+  text-align: center;
+  margin-top: 14px;
+}
+.travelIconTrain {
+  background: #dbf7e8;
+  border-radius: 7px;
+  padding: 13px 0;
+  text-align: center;
+  margin-top: 14px;
+}
+
+@media (max-width: 720px) {
+  .bookingGrid {
+    grid-template-columns: 1fr;
+  }
+  .dashboardWrapper {
+    padding: 12px 3px;
+  }
+  .card {
+    padding: 12px 6px;
+  }
+}
